@@ -19,7 +19,7 @@ async function bootstrap() {
   .setDescription('RestFul API for Movie App')
   .setVersion('1.0')
   .addTag('Endpoints')
-  .addBasicAuth()
+  .addBearerAuth()
   .build()
 
   

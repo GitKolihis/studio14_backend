@@ -52,6 +52,12 @@ export class Movie extends Model<Movie> {
     })
     year: string;
 
+    @Column({
+        type: DataType.ARRAY,
+        allowNull: false
+    })
+    principal: object[];
+
     @ForeignKey(() => User)
     @Column({
         type: DataType.INTEGER,
