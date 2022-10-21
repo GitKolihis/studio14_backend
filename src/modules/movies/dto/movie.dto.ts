@@ -35,7 +35,4 @@ export class MovieDTO {
     @ApiProperty()
     readonly year: string;
 
-    @IsNotEmpty()
-    @ApiProperty({ type: [Object]})
-    readonly principal: object[];
 }

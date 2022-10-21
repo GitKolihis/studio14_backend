@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import { DataTypes } from 'sequelize';
 import { Table, Column, Model, DataType, ForeignKey, BelongsTo } from 'sequelize-typescript';
 import { User } from '../users/user.entity'
 
@@ -51,12 +52,6 @@ export class Movie extends Model<Movie> {
         allowNull: false
     })
     year: string;
-
-    @Column({
-        type: DataType.ARRAY,
-        allowNull: false
-    })
-    principal: object[];
 
     @ForeignKey(() => User)
     @Column({
