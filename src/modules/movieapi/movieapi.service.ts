@@ -35,7 +35,7 @@ export class MovieapiService {
 
         return {
             data: {
-               result: movies.results
+                result: movies.results
             }
         }
     }
