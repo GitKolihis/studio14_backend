@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Injectable, Inject } from '@nestjs/common';
-import { MOVIE_REPOSITORY } from 'src/core/constants';
+import { MOVIE_REPOSITORY } from '../../core/constants';
 import { User } from '../users/user.entity'
 import { Movie } from './movie.entity'
 import { MovieDTO } from './dto/movie.dto'
